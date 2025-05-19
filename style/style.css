@@ -631,3 +631,11 @@ button, input {
     justify-content: center;
     padding-top: 1rem;
 }
+
+.work-filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+}
