@@ -559,3 +559,8 @@ button, input {
 .skills-header:not(:last-child) {
     margin-bottom: var(--mb25);
 }
+
+.skills-icon, .skills-arrow {
+    font-size: 2rem;
+    color: var(--skin-color);
+}
