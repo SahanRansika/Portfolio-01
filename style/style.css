@@ -619,3 +619,8 @@ button, input {
 .skills [data-content] {
     display: none;
 }
+
+.skills-active[data-content] {
+    display: block;
+}
+
