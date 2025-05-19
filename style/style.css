@@ -615,3 +615,7 @@ button, input {
     display: block;
     background-color: var(--skin-color);
 }
+
+.skills [data-content] {
+    display: none;
+}
