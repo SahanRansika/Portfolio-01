@@ -597,3 +597,8 @@ button, input {
     margin-bottom: var(--mb05);
 }
 
+.skills-name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
