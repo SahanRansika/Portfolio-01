@@ -543,4 +543,19 @@ button, input {
     color: var(--skin-color);
 }
 
+/*Skills*/
+.skills-container {
+    grid-template-columns: 360px 320px;
+    column-gap: 3rem;
+    justify-content: center;
+}
 
+.skills-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skills-header:not(:last-child) {
+    margin-bottom: var(--mb25);
+}
