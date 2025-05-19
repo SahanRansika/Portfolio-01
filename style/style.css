@@ -564,3 +564,11 @@ button, input {
     font-size: 2rem;
     color: var(--skin-color);
 }
+
+.skills-icon {
+    margin-right: var(--mb075);
+}
+
+.skills-arrow {
+    margin-left: auto;
+}
