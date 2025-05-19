@@ -572,3 +572,22 @@ button, input {
 .skills-arrow {
     margin-left: auto;
 }
+
+.skills-active .skills-arrow {
+    transform: rotate(-90deg);
+    transition: .4s;
+}
+
+.skills-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.skills-subtitle {
+    font-size: var(--small-font-size);
+}
+
+.skills-list {
+    row-gap: 1.8rem;
+}
+
