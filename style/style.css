@@ -39,18 +39,62 @@
     --z-fixed: 10;
     --z-modal: 100;
 }
-
+ /*All-Design*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+ /*Html-Design*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Body,Button,Input-Design*/
 body, button, input {
-    font-family: var(--body-font); font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 
+/*H1,H2,H3-Design*/
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+/*ul-Design*/
+ul {
+    list-style: none;
+}
+
+/*a-Design*/
+a {
+    text-decoration: none;
+}
+
+/*Image-Design*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Button-Design*/
+button {
+    cursor: pointer;
+}
+
+/*Button,Input-Design*/
+button, input {
+    border: none;
+    outline: none;
+}
+
+/*container-Design*/
+.container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*grid-Design*/
+.grid { display: grid; }
