@@ -591,3 +591,9 @@ button, input {
     row-gap: 1.8rem;
 }
 
+.skills-titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb05);
+}
+
