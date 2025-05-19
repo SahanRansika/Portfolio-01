@@ -639,3 +639,18 @@ button, input {
     column-gap: .75rem;
     margin-bottom: 2rem;
 }
+
+.work-item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: 0.25rem .75rem;
+    font-weight: var(--font-medium);
+    border-radius: .5rem;
+}
+
+.work-card {
+    background-color: var(--box-color);
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+
