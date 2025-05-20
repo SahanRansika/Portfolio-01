@@ -1051,3 +1051,8 @@ textarea.input {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.6rem;
 }
+
+.footer-bg {
+    background-color: var(--box-color);
+    padding: 3rem 0 3.5rem;
+}
