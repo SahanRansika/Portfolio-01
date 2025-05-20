@@ -782,3 +782,10 @@ button, input {
     justify-content: center;
     column-gap: 1.8rem;
 }
+
+.services-content {
+    position: relative;
+    background-color: var(--box-color);
+    padding: 6rem 0 2rem 2.5rem;
+    border-radius: .25rem;
+}
