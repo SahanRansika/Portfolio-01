@@ -1041,3 +1041,13 @@ textarea.input {
     width: 50%;
     opacity: 1;
 }
+
+/*Footer*/
+.footer {
+    padding-top: 2rem;
+}
+
+.footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.6rem;
+}
