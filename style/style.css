@@ -796,3 +796,23 @@ button, input {
     color: var(--skin-color);
     margin-bottom: var(--mb1);
 }
+
+.services-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb1);
+    font-weight: var(--font-medium);
+}
+
+.services-button {
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex; align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.services-button-icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
