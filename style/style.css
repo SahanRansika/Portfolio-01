@@ -662,3 +662,9 @@ button, input {
     border-radius: .5rem;
     margin-bottom: var(--mb1);
 }
+
+.work-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb05);
+}
