@@ -708,3 +708,70 @@ button, input {
     z-index: var(--z-modal);
     transition: .4s;
 }
+
+.portfolio-popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-popup-inner {
+    background-color: var(--box-color);
+    width: 900px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.portfolio-popup-content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.portfolio-popup-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--skin-color);
+    cursor: pointer;
+}
+
+.portfolio-popup-img {
+    border-radius: .5rem;
+}
+
+.portfolio-popup-subtitle {
+    font-size: var(--smaller-font-size);
+    margin-bottom: var(--mb025);
+}
+
+.details-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb1);
+}
+
+.details-description {
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb2);
+}
+
+.details-info li {
+    margin-bottom: var(--mb075);
+    text-transform: capitalize;
+    font-size: var(--small-font-size);
+}
+
+.details-info li:last-child {
+    margin-bottom: 0;
+}
+
+.details-info li span {
+    font-weight: normal;
+}
+
+.details-info li a {
+    text-transform: lowercase;
+    color: var(--skin-color);
+}
