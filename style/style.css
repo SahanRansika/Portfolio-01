@@ -970,3 +970,74 @@ button, input {
     outline: none;
     transition: .4s;
 }
+
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 140px;
+    border-radius: .5rem;
+    resize: none;
+    font-family: var(--body-font);
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    padding: 0 .4rem;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: var(--font-medium);
+    pointer-events: none;
+    z-index: 15;
+    transition: .5s;
+}
+
+.input-container.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+}
+
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: var(--small-font-size);
+    padding: 0 .4rem;
+    pointer-events: none;
+    z-index: var(--z-fixed);
+    color: transparent;
+}
+
+.input-container span::before, .input-container span::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    height: 5px;
+    background-color: var(--body-color);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+.input-container span::before {
+    left: 50%;
+}
+
+.input-container span::after {
+    right: 50%;
+}
+
+.input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: var(--smaller-font-size);
+}
+
+.input-container.focus span::before, .input-container.focus span::after  {
+    width: 50%;
+    opacity: 1;
+}
