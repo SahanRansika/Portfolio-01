@@ -913,3 +913,60 @@ button, input {
     text-align: center;
 }
 
+.contact-card-icon {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb025);
+}
+
+.contact-card-title {
+    font-weight: var(--font-medium);
+}
+
+.contact-card-title, .contact-card-data {
+    font-size: var(--small-font-size);
+}
+
+.contact-card-data {
+    display: block;
+    margin-bottom: var(--mb075);
+}
+
+.contact-button {
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
+
+.contact-button-icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.contact-button:hover .contact-button-icon {
+    transform: translateX(.25rem);
+}
+
+.input-container {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1.9rem;
+}
+
+.input {
+    width: 100%;
+    border: 2px solid var(--text-color);
+    background-color: transparent;
+    padding: 0.6rem 1.2rem;
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    letter-spacing: .5px;
+    border-radius: .5rem;
+    outline: none;
+    transition: .4s;
+}
