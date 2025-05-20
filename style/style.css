@@ -668,3 +668,12 @@ button, input {
     font-weight: var(--font-medium);
     margin-bottom: var(--mb05);
 }
+
+.work-button {
+    color: var(--skin-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor: pointer;
+}
