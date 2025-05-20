@@ -775,3 +775,10 @@ button, input {
     text-transform: lowercase;
     color: var(--skin-color);
 }
+
+/*Services*/
+.services-container {
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
