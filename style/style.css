@@ -1094,3 +1094,15 @@ textarea.input {
     text-align: center;
     margin-top: 4.5rem;
 }
+
+.footer-copy a {
+    font-family: var(--signature-font);
+}
+
+.footer-copy a:hover {
+    color: var(--skin-color);
+}
+
+.footer-title, .footer-subtitle, .footer-links, .footer-social, .footer-copy a {
+    color: var(--title-color);
+}
