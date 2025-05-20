@@ -1056,3 +1056,41 @@ textarea.input {
     background-color: var(--box-color);
     padding: 3rem 0 3.5rem;
 }
+
+.footer-title {
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb025);
+}
+
+.footer-subtitle {
+    font-size: var(--small-font-size);
+}
+
+.footer-links {
+    display: flex;
+    justify-self: center;
+    column-gap: 2rem;
+}
+
+.footer-links:hover {
+    color: var(--skin-color);
+}
+
+.footer-socials {
+    justify-self: flex-end;
+}
+
+.footer-social {
+    font-size: 1.25rem;
+    margin-right: var(--mb15);
+}
+
+.footer-social:hover {
+    color: var(--skin-color);
+}
+
+.footer-copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: 4.5rem;
+}
