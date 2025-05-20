@@ -677,3 +677,12 @@ button, input {
     column-gap: .25rem;
     cursor: pointer;
 }
+
+.work-button-icon {
+    font-size: 1rem;
+    transition: .4s;
+}
+
+.work-button:hover .work-button-icon {
+    transform: translateX(.25rem);
+}
