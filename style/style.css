@@ -272,13 +272,19 @@ button, input {
     margin: auto;
 }
 
-.btn-share {
+
+.btn-up {
     position: absolute;
     bottom: 1.8rem;
     left: 0;
     right: 0;
     text-align: center;
     cursor: pointer;
+}
+
+.btn-up a{
+    color: white;
+    font-size: 0.5rem;
 }
 
 .social-share {
@@ -292,7 +298,7 @@ button, input {
 
 /*Home*/
 .home {
-    background: url('images/home1.png');
+    /*background: url('images/home1.png');*/
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -343,7 +349,8 @@ button, input {
 }
 
 .home-img {
-    display: none;
+    position: absolute;
+    /*display: none;*/
 }
 
 .home-title {
@@ -396,7 +403,7 @@ button, input {
 }
 
 .about-img {
-    width: 480px;
+    width: 400px;
     border-radius: .75rem;
     justify-self: center;
 }
@@ -1099,10 +1106,6 @@ textarea.input {
     font-family: var(--signature-font);
 }
 
-.footer-copy a:hover {
-    color: var(--skin-color);
-}
-
-.footer-title, .footer-subtitle, .footer-links, .footer-social, .footer-copy a {
+.footer-title, .footer-subtitle, .footer-links, .footer-social {
     color: var(--title-color);
 }
