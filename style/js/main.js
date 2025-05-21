@@ -105,7 +105,6 @@ inputs.forEach((input) => {
     input.addEventListener('blur', blurFunc);
 })
 
-
 // Scroll Section Active Link
 
 const sections = document.querySelectorAll('section[id]');
