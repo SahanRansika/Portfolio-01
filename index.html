@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/lib/fontawesome/fontawesome-free-6.7.2-web/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <div class="nav-toggle" id="nav-toggle">
@@ -91,13 +92,13 @@
 
             <div class="home-data">
                 <h1 class="home-title">Hi, I'm Sahan Ransika</h1>
-<!--                <h3 class="home-subtitle">Full-Stack Developer</h3>-->
+<!--                <h3 class="text-animate">Full-Stack Developer</h3>-->
                 <div class="text-animate">
                     <h3>Full-Stack Developer</h3>
                 </div>
                 <p class="home-description">I have high level experience in web design, development knowledge and producing quality work</p>
                 <a href="#about" class="button">
-                    About me!
+                    About me
                 </a>
             </div>
 
@@ -136,8 +137,11 @@
     <section class="about section" id="about">
         <h2 class="section-title" data-heading="My Intro">About me</h2>
 
-        <div class="about-container container grid">
-            <img src="images/about.png" alt="" class="about-img">
+        <div class="about-container container grid " data-aos="fade-up">
+           <div data-aos="fade-up"
+                data-aos-duration="3000">
+               <img src="images/about.png" alt="" class="about-img">
+           </div>
 
             <div class="about-data">
                 <h3 class="about-heading">Hi, I'm Sahan Ransika Kumara, based in Sri Lanka</h3>
@@ -173,7 +177,9 @@
         <h2 class="section-title" data-heading="My Journey">Qualifications</h2>
 
         <div class="qualification-container container grid">
-            <div class="education">
+            <div class="education" data-aos="fade-right"
+                 data-aos-offset="300"
+                 data-aos-easing="ease-in-sine">
                 <h3 class="qualification-title"><i class="uil uil-graduation-cap"></i>Education</h3>
 
                 <div class="timeline">
@@ -200,28 +206,30 @@
                 </div>
             </div>
 
-            <div class="experience">
+            <div class="experience" data-aos="fade-left"
+                 data-aos-offset="500"
+                 data-aos-duration="500">
                 <h3 class="qualification-title"><i class="uil uil-suitcase"></i>Experience</h3>
 
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="circle-dot"></div>
                         <h3 class="timeline-title">UI/UX Design</h3>
-                        <p class="timeline-text">Lorem</p>
+                        <p class="timeline-text">Study</p>
                         <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2018 - Present</span>
                     </div>
 
                     <div class="timeline-item">
                         <div class="circle-dot"></div>
                         <h3 class="timeline-title">Application & Software Development</h3>
-                        <p class="timeline-text">Lorem</p>
+                        <p class="timeline-text">Study</p>
                         <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2015 - 2018</span>
                     </div>
 
                     <div class="timeline-item">
                         <div class="circle-dot"></div>
                         <h3 class="timeline-title">Web Design</h3>
-                        <p class="timeline-text">Lorem</p>
+                        <p class="timeline-text">Study</p>
                         <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2013 - 2015</span>
                     </div>
                 </div>
@@ -234,7 +242,7 @@
         <h2 class="section-title" data-heading="My Abilities">My Experience</h2>
 
         <div class="skills-container container grid">
-            <div class="skills-tabs">
+            <div class="skills-tabs" data-aos="fade-down-right">
                 <div class="skills-header skills-active" data-target="#frontend">
                     <i class="uil uil-brackets-curly skills-icon"></i>
 
@@ -273,7 +281,7 @@
             </div>
 
             <div class="skills-content">
-                <div class="skills-group skills-active" data-content id="frontend">
+                <div class="skills-group skills-active" data-content id="frontend" data-aos="fade-down-left">
                     <div class="skills-list grid">
                         <div class="skills-data">
                             <div class="skills-titles">
@@ -311,11 +319,11 @@
                         <div class="skills-data">
                             <div class="skills-titles">
                                 <h3 class="skills-name">React</h3>
-                                <span class="skills-number">85%</span>
+                                <span class="skills-number">5%</span>
                             </div>
 
                             <div class="skills-bar">
-                                <span class="skills-percentage" style="width: 85%;"></span>
+                                <span class="skills-percentage" style="width: 5%;"></span>
                             </div>
                         </div>
                     </div>
@@ -336,12 +344,12 @@
 
                         <div class="skills-data">
                             <div class="skills-titles">
-                                <h3 class="skills-name">Sketch</h3>
-                                <span class="skills-number">80%</span>
+                                <h3 class="skills-name">Canva</h3>
+                                <span class="skills-number">90%</span>
                             </div>
 
                             <div class="skills-bar">
-                                <span class="skills-percentage" style="width: 80%;"></span>
+                                <span class="skills-percentage" style="width: 90%;"></span>
                             </div>
                         </div>
 
@@ -363,7 +371,29 @@
                     <div class="skills-list grid">
                         <div class="skills-data">
                             <div class="skills-titles">
-                                <h3 class="skills-name">PHP</h3>
+                                <h3 class="skills-name">Java</h3>
+                                <span class="skills-number">75%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 75%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">JavaFx</h3>
+                                <span class="skills-number">85%</span>
+                            </div>
+
+                            <div class="skills-bar">
+                                <span class="skills-percentage" style="width: 85%;"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills-data">
+                            <div class="skills-titles">
+                                <h3 class="skills-name">MySQL</h3>
                                 <span class="skills-number">80%</span>
                             </div>
 
@@ -375,33 +405,11 @@
                         <div class="skills-data">
                             <div class="skills-titles">
                                 <h3 class="skills-name">Python</h3>
-                                <span class="skills-number">80%</span>
+                                <span class="skills-number">20%</span>
                             </div>
 
                             <div class="skills-bar">
-                                <span class="skills-percentage" style="width: 80%;"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills-data">
-                            <div class="skills-titles">
-                                <h3 class="skills-name">MySQL</h3>
-                                <span class="skills-number">70%</span>
-                            </div>
-
-                            <div class="skills-bar">
-                                <span class="skills-percentage" style="width: 70%;"></span>
-                            </div>
-                        </div>
-
-                        <div class="skills-data">
-                            <div class="skills-titles">
-                                <h3 class="skills-name">Firebase</h3>
-                                <span class="skills-number">75%</span>
-                            </div>
-
-                            <div class="skills-bar">
-                                <span class="skills-percentage" style="width: 75%;"></span>
+                                <span class="skills-percentage" style="width: 20%;"></span>
                             </div>
                         </div>
 
@@ -422,7 +430,7 @@
             <span class="work-item" data-filter=".design">Design</span>
         </div>
 
-        <div class="work-container container grid">
+        <div class="work-container container grid" data-aos="fade-up">
             <div class="work-card mix web">
                 <img src="images/portfolio.png" alt="" class="work-img">
                 <h3 class="work-title">My Portfolio</h3>
@@ -553,12 +561,12 @@
         </div>
     </div>
 
-<!--    Services-->
+<!--    Assignment-->
     <section class="services section" id="assignment">
         <h2 class="section-title" data-heading="Services">Assignment</h2>
 
         <div class="services-container container grid">
-            <div class="services-content">
+            <div class="services-content" data-aos="flip-right">
                 <div>
                     <i class="uil uil-web-grid services-icon"></i>
                     <h3 class="services-title">Internet <br> Technologies</h3>
@@ -573,7 +581,7 @@
                         <i class="uil uil-times services-modal-close"></i>
 
                         <h3 class="services-modal-title">Internet Technologies</h3>
-                        <p class="services-modal-description">I offer services with more than 3 years of experience with quality work to clients and companies</p>
+                        <p class="services-modal-description">I offer services with more than 2 years of experience with quality work to clients and companies</p>
 
                         <ul class="services-modal-services grid">
                             <li class="services-modal-service">
@@ -605,12 +613,48 @@
                                 <p class="services-modal-info">Assignment-05</p>
                                 <a href="#">www.assigment05.com</a>
                             </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-06</p>
+                                <a href="#">www.assigment06.com</a>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-07</p>
+                                <a href="#">www.assigment07.com</a>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-08</p>
+                                <a href="#">www.assigment08.com</a>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-09</p>
+                                <a href="#">www.assigment09.com</a>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-10</p>
+                                <a href="#">www.assigment10.com</a>
+                            </li>
+
+                            <li class="services-modal-service">
+                                <i class="uil uil-check-circle services-modal-icon"></i>
+                                <p class="services-modal-info">Assignment-11</p>
+                                <a href="#">www.assigment11.com</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="services-content">
+            <div class="services-content" data-aos="flip-right">
                 <div>
                     <i class="uil uil-arrow services-icon"></i>
                     <h3 class="services-title">Programming <br> Fundermental</h3>
@@ -624,7 +668,7 @@
                     <div class="services-modal-content">
                         <i class="uil uil-times services-modal-close"></i>
 
-                        <h3 class="services-modal-title">UI/UX Designer</h3>
+                        <h3 class="services-modal-title">Programming Fundermental</h3>
                         <p class="services-modal-description">I offer services with more than 5 years of experience with quality work to clients and companies</p>
 
                         <ul class="services-modal-services grid">
@@ -662,7 +706,7 @@
                 </div>
             </div>
 
-            <div class="services-content">
+            <div class="services-content" data-aos="flip-right">
                 <div>
                     <i class="uil uil-edit services-icon"></i>
                     <h3 class="services-title">Object Oriented<br>Programming</h3>
@@ -672,11 +716,11 @@
                         View More <i class="uil uil-arrow-right services-button-icon"></i>
                     </span>
 
-                <div class="services-modal">
+                <div class="services-modal ">
                     <div class="services-modal-content">
                         <i class="uil uil-times services-modal-close"></i>
 
-                        <h3 class="services-modal-title">Branding Designer</h3>
+                        <h3 class="services-modal-title">Object Oriented Programming</h3>
                         <p class="services-modal-description">I offer services with more than 2 years of experience with quality work to clients and companies</p>
 
                         <ul class="services-modal-services grid">
@@ -722,8 +766,8 @@
 
         <div class="contact-container container grid">
             <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-card">
+                <div class="contact-info" data-aos="zoom-in-right">
+                    <div class="contact-card ">
                         <i class="uil uil-envelope-edit contact-card-icon"></i>
                         <h3 class="contact-card-title">Email</h3>
                         <span class="contact-card-data">sahanransika07@gmail.com</span>
@@ -746,8 +790,8 @@
                 </div>
             </div>
 
-            <div class="contact-content">
-                <form action="" class="contact-form">
+            <div class="contact-content" >
+                <form action="" class="contact-form" data-aos="zoom-in-left">
                     <div class="input-container">
                         <input type="text" class="input">
                         <label for="">Username</label>
@@ -832,5 +876,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="style/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

@@ -2,16 +2,15 @@
 
 /*root element*/
 :root {
-    --hue-color: 242;
-
     --skin-color: hsl(342, 92%, 46%);
     --mirage-color: hsl(210, 10%, 23%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 85%);
-    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --title-color:white;
+    --text-color:white;
+    --body-color:black;
+    --hue-color: 242;
     --box-color: hsl(var(--hue-color), 14%, 10%);
-    --scroll-box-color: hsl(var(--hue-color), 12%, 38%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+    --scroll-box-color: var(--mirage-color);
+    --scroll-thumb-color:var(--skin-color);
 
     --body-font: 'Poppins', sans-serif;
     --signature-font: 'Turret Road', sans-serif;
@@ -23,6 +22,7 @@
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
+    --smallerd-font-size: 10px;
 
     --font-medium: 500;
     --font-bold: 600;
@@ -38,6 +38,8 @@
 
     --z-fixed: 10;
     --z-modal: 100;
+
+    --transition: all 0.6s ease-in-out;
 }
  /*All-Design*/
 * {
@@ -57,7 +59,7 @@ body, button, input {
 }
 
 body {
-    background-color: black;
+    background-color: var(--body-color);
     color: var(--text-color);
 }
 
@@ -367,7 +369,7 @@ button, input {
 }
 
 .text-animate h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px var(--skin-color);
@@ -483,6 +485,11 @@ button, input {
     border-radius: .25rem;
     padding: 1rem 1.25rem;
     background-color: var(--box-color);
+    transition: var(--transition);
+}
+
+.about-box:hover {
+    transform: translateY(-17px);
 }
 
 .about-icon {
@@ -505,6 +512,7 @@ button, input {
     column-gap: 3rem;
     justify-content: center;
 }
+
 
 .qualification-title {
     font-size: var(--h3-font-size);
@@ -689,6 +697,7 @@ button, input {
     gap: 1.8rem;
     justify-content: center;
     padding-top: 1rem;
+
 }
 
 .work-filters {
@@ -835,7 +844,7 @@ button, input {
     color: var(--skin-color);
 }
 
-/*Services*/
+/*Assignment*/
 .services-container {
     grid-template-columns: repeat(3, 250px);
     justify-content: center;
@@ -970,6 +979,11 @@ button, input {
     padding: 1rem;
     border-radius: .5rem;
     text-align: center;
+    transition: var(--transition);
+}
+
+.contact-card:hover {
+    transform: translateX(-10px);
 }
 
 .contact-card-icon {
@@ -1444,7 +1458,7 @@ textarea.input {
         font-size: var(--h1-font-size);
     }
     .text-animate {
-        font-size: var(--normal-font-size);
+        font-size: var(--smallerd-font-size);
     }
 
     .about-info {

@@ -38,12 +38,13 @@ function activeWork() {
     linkWork.forEach(l => l.classList.remove('active-work'))
     this.classList.add('active-work')
 }
+
 linkWork.forEach(l => l.addEventListener('click', activeWork));
 
 //Portfolio Popup
 
 document.addEventListener('click', (e) => {
-    if(e.target.classList.contains('work-button')){
+    if (e.target.classList.contains('work-button')) {
         togglePortfolioPopup();
         portfolioItemDetails(e.target.parentElement);
     }
@@ -66,7 +67,7 @@ const modalViews = document.querySelectorAll('.services-modal');
 const modelBtns = document.querySelectorAll('.services-button');
 const modalCloses = document.querySelectorAll('.services-modal-close');
 
-let modal = function(modalClick) {
+let modal = function (modalClick) {
     modalViews[modalClick].classList.add('active-modal');
 }
 
@@ -95,7 +96,7 @@ function focusFunc() {
 
 function blurFunc() {
     let parent = this.parentNode;
-    if(this.value == "") {
+    if (this.value == "") {
         parent.classList.remove('focus');
     }
 }
@@ -118,9 +119,9 @@ function navHighlighter() {
         const sectionTop = current.offsetTop - 50;
         const sectionId = current.getAttribute('id');
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link');
-        }else {
+        } else {
             document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link');
         }
     })
@@ -132,14 +133,49 @@ const navMenu = document.getElementById('sidebar');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 
-if(navToggle) {
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-sidebar');
     })
 }
 
-if(navClose) {
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-sidebar');
     })
 }
+
+// Contact
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+
+    form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page refresh
+
+    // Collect form data
+    const username = form.querySelector('input[name="username"]').value.trim();
+    const email = form.querySelector('input[name="email"]').value.trim();
+    const phone = form.querySelector('input[name="phone"]').value.trim();
+    const message = form.querySelector('textarea[name="message"]').value.trim();
+
+    // Simple validation (you can expand this)
+    if (!username || !email || !phone || !message) {
+    alert("Please fill out all fields.");
+    return;
+}
+
+    // Simulate sending data
+    console.log("Form Submitted:");
+    console.log("Username:", username);
+    console.log("Email:", email);
+    console.log("Phone:", phone);
+    console.log("Message:", message);
+
+    // Show a success message
+    alert("Message sent successfully!");
+
+    // Optionally clear the form
+    form.reset();
+});
+});
